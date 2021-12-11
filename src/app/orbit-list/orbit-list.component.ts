@@ -10,17 +10,13 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
-  constructor() { }
+  constructor() { 
+	 //console.log("does it work");
+  }
 
   ngOnInit() {
   }
 
-  allElse(satellite: Satellite): boolean{
-	  if ((this.satellites.indexOf(satellite)+1)%2===1){
-		  return true;
-	  }
-	  return false;
-  }
 	sort(column: string): void {
 		// array.sort modifies the array, sorting the items based on the given compare function
 		this.satellites.sort(function (a: Satellite, b: Satellite): number {
@@ -34,3 +30,10 @@ export class OrbitListComponent implements OnInit {
 	}
 
 }
+
+//   allElse(satellite: Satellite): boolean{ line 17
+// 	  if ((this.satellites.indexOf(satellite)+1)%2===1){
+// 		  return true;
+// 	  }
+// 	  return false;
+//   }

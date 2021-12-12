@@ -7,6 +7,8 @@
 	background-color: #da8a8a;
 }
 
+
+
 table {
  color: #111;
  border-radius: 5px;
@@ -25,4 +27,8 @@ th, td {
 	text-align: left;
 	margin: 5px 10px;
 	padding: 6px;
+}
+
+.allElse {
+	background-color: rgb(146, 172, 146);
 }
